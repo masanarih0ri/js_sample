@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="./js/main.js"></script>
+  <title>chap02_01</title>
+</head>
+<body>
+  <header class="page-header" role="banner">
+    <!-- <h1>Creative jQuery Sample</h1> -->
+    <h1>サンプル</h1>
+  </header>
+  <div class="page-main" role="main">
+    <div id="typo">
+      <!-- <div class="inner">Creative jQuery</div> -->
+      <div class="inner">PWA Sample</div>
+    </div>
+  </div>
+  <footer class="page-footer" role="contentinfo">
+    <small class="copyright">COPYRIGHT &copy; <a href="http://www.shiftbrain.co.jp" target="_blank">SHIFTBRAIN Inc.</a></small>
+  </footer>
+  <script type="text/javascript">
+    if('serviceWorker' in navigator) {
+      navigator.serviceWorker
+               .register('/sw.js')
+               .then(function() { console.log("Service Worker Registered"); })
+               .catch(function() { console.log("Service Worker Not Registered"); });
+    }
+  </script>
+</body>
+</html>
